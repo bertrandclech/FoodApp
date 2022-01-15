@@ -60,6 +60,11 @@ h2 {
     color:var(--green-dark);
 }
 
+main section:nth-child(3) {
+    text-align: center;
+
+}
+
 h1 span {
     font-size: 2rem;
     color:var(--green-dark); 
@@ -73,7 +78,7 @@ h1 span {
     border-color:var(--gray-dark);
     background-color: var(--green-dark);
     color: var(--white);
-    padding:4px 4px 4px 4px;
+    padding:5px;
 
 }
 
@@ -87,6 +92,10 @@ h1 span {
 
 .smallRoudedImage {
     width: 200px;
+}
+
+.sectionBackgroungGreen {
+    background-color: var(--green-light);
 }
 
 section div {
