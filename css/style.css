@@ -9,112 +9,131 @@
     --green-light: #f5fbfc;
     --blue-dark: #546285;
 }
-
+/* caractéristiques de texte appliquées à toute la page */
 * {
     font-family: 'Inter', sans-serif;
     font-size: 0.8rem;
 }
+/* id pour la partie du header qui contient le slogan de FoddApp */
 
 #slogan {
-    width:100%;
-    text-align:center;
-    background-color: var(--green-dark);
-    color:var(--white);
-    padding: 20px 0;
+    width:100%; /* on cippe 100% de l'écran */
+    text-align:center; /* centrage du slogan */
+    background-color: var(--green-dark); /* couleur de fond propre au slogan */
+    color:var(--white); /* slogan en blanc */
+    padding: 20px 0; /* espace en haut et bas de 20 px */
 }
 
+/* balise nav contenue dans le header */
 header nav {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    margin: auto;
-    padding: 25px 0;
+    display: flex; /* répartit le contenu de nav en éléments sur toute la largeur de nav fixée à 60% de la totzlité de l'écran */
+    justify-content: space-between; /* répartit les éléments aux extrémités */
+    width: 60%; /* largeur dde la nav estimée à 60% dde la largeur de l'écran */
+    margin: auto; /* répartit la largeur */
+    padding: 25px 0; /* espace en haut et bas de 25px */
 }
 
+/* class logo qui gère la taille du logo */
 .logo {
-    width: 20px;
+    width: 20px; /* largeur fixée à 20 px */
 }
 
+/* partie droite de la navigation */
 header nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
+    display: flex; /* display en inline */
+    list-style: none; /* suppression des puces */
+    gap: 30px; /* espace entre les éléments */
 
 }
+
+/* attributs fixés aux liens de la navigation */
 header nav ul li a {
-    text-decoration: none;
-    color: var(--blue-dark);
+    text-decoration: none; /* suppression du soulignement des liens */
+    color: var(--blue-dark); /* changement de la couleur par ddéfaut des liens */
 }
 
+/* largeur de la balise main (partie centrale de la page contenant 3 sections */
 main {
-    width: 60%;
+    width: 60%; /* même largeur que la navigation */
     margin:auto;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* taille de caratère duu titre h1. il n'y en a qu'un seul sur la page */
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* plusieurs sur la page */
     color:var(--green-dark);
 }
 
+/* 3ème et dernière section du main de la page: on centre tous les éléments */
 main section:nth-child(3) {
     text-align: center;
 
 }
-
+/* gestion du changement de couleur dasn le h1 */
 h1 span {
-    font-size: 2rem;
+    font-size: 2rem; /* on force le passage à la taille du h1. PAr défaut span réduit à la taille dde pôlice par défaut */
     color:var(--green-dark); 
 }
 
+/* gestion des 2 boutons class bouton réalisée sur des balises a */
 .button {
-    text-decoration: none;
-    border:none;
-    border-width: 1px;
-    border-radius: 4px;
-    border-color:var(--gray-dark);
-    background-color: var(--green-dark);
-    color: var(--white);
-    padding:5px;
+    text-decoration: none; /* suppression de l'underline */
+    border:none; /* pas de trait de bordure extérieure */
+    border-width: 1px; /* non utilisé car border fixé à none */ 
+    border-radius: 4px; /* arrondissement des angles */
+    border-color:var(--gray-dark); /* non utilisé */
+    background-color: var(--green-dark); /* couleur de fond du bouton */
+    color: var(--white); /* couleur du texte sur le bouton */
+    padding:5px; /* espace autour du texte du bouton. Il y a un PB */
 
 }
-
+/* Suite test usage d'uun div */
 .button a {
     text-decoration: none;
     color: var(--white);
 }
 
+/* définit la largeur de 2 images de la première section */
 .bigImage {
     width: 300px;
 }
 
+/* définit la largeur de l'image centrale de la troisième section */
 .bigRoudedImage {
     width: 250px;
 }
 
+/* définit la largeur des deux autres images de la troisième section */
 .smallRoudedImage {
     width: 200px;
 }
 
+/* fixe la couleur de fond de la deuxième section avec usage d'uen classe */
 .sectionBackgroungGreen {
     background-color: var(--green-light);
 }
 
+
+/* gère l'affichage flex row pour réalisezr 2 colonne dans les sections 1,2 et 3 */ 
 section div {
     display: flex;
     justify-content: space-between;
 
 }
 
+/* gére l'affichage en display block pour les éléments de la première colonne */
+/* pb comportement */
 section div div {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+
+/* la aprtier footer est gérée de manière semblable à celle du header */
 footer {
     display: flex;
     justify-content: space-between;
