@@ -29,3 +29,8 @@ Privilégier l'anglais pour le nom de vos classes CSS
 ## Preview
 
 ![Preview desktop](preview_desktop.png)
+
+## Problèmes à corriger avec le formateur
+- Répartition égale sur les 2 premières sections du main
+- taille des 2 boutons
+- centrage des images dans la 3ème section
