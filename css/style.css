@@ -43,7 +43,27 @@ header nav ul {
 }
 header nav ul li a {
     text-decoration: none;
-    color: var(--blue-dark)
+    color: var(--blue-dark);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    background-color: var(--green-light);
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    gap:30px;
 }
 
 
+footer a,
+footer ul li a {
+    text-decoration: none;
+    color: var(--blue-dark);
+}
