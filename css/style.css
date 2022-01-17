@@ -121,6 +121,7 @@ h1 span {
 section div {
     display: flex;
     justify-content: space-between;
+    place-items: center;
 
 }
 
@@ -130,6 +131,7 @@ section div div {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    place-items: center;
 }
 
 
